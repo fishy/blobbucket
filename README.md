@@ -15,4 +15,4 @@ for more background information.
 
 ## License
 
-[BSD License](https://github.com/fishy/bucket/blob/master/LICENSE).
+[BSD License](https://github.com/fishy/blobbucket/blob/master/LICENSE).
