@@ -38,7 +38,9 @@ func (bkt *BlobBucket) Write(
 	name string,
 	data io.Reader,
 ) error {
-	writer, err := bkt.bkt.NewWriter(ctx, name, nil)
+	writer, err := bkt.bkt.NewWriter(ctx, name, &blob.WriterOptions{
+		ContentType: "application/octet-stream",
+	})
 	if err != nil {
 		return err
 	}
