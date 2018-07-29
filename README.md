@@ -1,5 +1,5 @@
 [![GoDoc](https://godoc.org/github.com/fishy/bucket?status.svg)](https://godoc.org/github.com/fishy/blobbucket)
-[![Go Report Card](https://goreportcard.com/badge/github.com/fishy/bucket)](https://goreportcard.com/report/github.com/fishy/blobbucket)
+[![Go Report Card](https://goreportcard.com/badge/github.com/fishy/blobbucket)](https://goreportcard.com/report/github.com/fishy/blobbucket)
 
 # Blob Bucket
 
