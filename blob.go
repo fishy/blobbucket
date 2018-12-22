@@ -8,7 +8,7 @@ import (
 
 	"github.com/fishy/errbatch"
 	"github.com/fishy/fsdb/bucket"
-	"github.com/google/go-cloud/blob"
+	"gocloud.dev/blob"
 )
 
 // Make sure *BlobBucket satisifies bucket.Bucket interface.
@@ -30,7 +30,7 @@ func (bkt *BlobBucket) Read(
 	ctx context.Context,
 	name string,
 ) (io.ReadCloser, error) {
-	return bkt.bkt.NewReader(ctx, name)
+	return bkt.bkt.NewReader(ctx, name, nil)
 }
 
 func (bkt *BlobBucket) Write(

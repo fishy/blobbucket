@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/fishy/blobbucket"
-	"github.com/google/go-cloud/blob/fileblob"
+	"gocloud.dev/blob/fileblob"
 )
 
 func Example() {
@@ -18,7 +18,7 @@ func Example() {
 		log.Fatal(err)
 	}
 	defer os.RemoveAll(dir)
-	fs, err := fileblob.NewBucket(dir)
+	fs, err := fileblob.OpenBucket(dir, nil)
 	if err != nil {
 		log.Fatal(err)
 	}
