@@ -58,7 +58,7 @@ func (bkt *BlobBucket) Delete(ctx context.Context, name string) error {
 	return bkt.bkt.Delete(ctx, name)
 }
 
-// IsNotExist checks whether err is storage.ErrObjectNotExist.
+// IsNotExist checks whether err means the object does not exist on the blob.
 func (bkt *BlobBucket) IsNotExist(err error) bool {
 	return blob.IsNotExist(err)
 }
